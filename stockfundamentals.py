@@ -2,7 +2,7 @@
 import fundamentalanalysis as fa
 
 ticker = "MSFT"
-api_key = "YOUR API KEY HERE"
+api_key = "56461fb6df3e12f5f497ebe000013f48"
 
 # Show the available companies
 companies = fa.available_companies(api_key)
@@ -48,3 +48,13 @@ stock_data_detailed = fa.stock_data_detailed(ticker, api_key, begin="2000-01-01"
 
 # Download dividend history
 dividends = fa.stock_dividend(ticker, api_key, begin="2000-01-01", end="2020-01-01")
+
+
+
+
+# --------analysis
+print(cash_flow_statement_annually["2022"])
+cash_flow_statement_annually.columns
+cash_flow_statement_annually.index
+
+key_metrics_annually.loc["evToOperatingCashFlow"]
